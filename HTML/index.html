@@ -4,13 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
-    
+
+    <img src="" alt="">
     <title> DevPro Solution </title>
 
     <link rel="stylesheet" href="../CSS/global.css">
 </head>
 
-<body>
+<header>
+    <h1><span>DevPro</span> Solution</h1>
+</header>
+
+<body id="body">
     <div class="modal" id="modal">
         <form method="post" action="../PHP/envio_email.php">
             <h1> Entre em <span>Contato</span></h1>
@@ -24,7 +29,7 @@
                 <input type="text" placeholder="Seu Pedido" name="pedido" required autocomplete="off">
             </div>
 
-            <button type="submit" class="btn"> Enviar </button>
+            <button type="submit" id="send" class="btn"> Enviar </button>
         </form>
     </div>
     <div class="button-modal">
@@ -36,8 +41,19 @@
             </span>
         </div>
     </div>
+    <div class="button-shadow">
+        <div class="shadow">
+            <span></span>
+            <span></span>
+            <span>
+                <div> </div>
+            </span>
+        </div>
+    </div>
 
-    <script href="../Scripts/modal.js"></script>
+
+    <script src="../Scripts/modal.js"></script>
 
 </body>
+
 </html>
